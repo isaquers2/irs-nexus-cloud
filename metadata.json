@@ -1,0 +1,6 @@
+{
+  "name": "IRS Nexus Cloud",
+  "description": "Ambiente educacional em nuvem para Matemática, Biologia, Física e Google Workspace com materiais de apoio, videoaulas, atividades interativas gamificadas, acompanhamento de alunos e notificações por e-mail.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

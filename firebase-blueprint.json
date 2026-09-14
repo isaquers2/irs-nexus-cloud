@@ -1,0 +1,46 @@
+{
+  "entities": {
+    "materials": {
+      "title": "Study Material",
+      "description": "Educational materials, articles, PDF files, links and interactive simulations",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "subject": { "type": "string" },
+        "gradeLevel": { "type": "string" },
+        "contentType": { "type": "string" },
+        "dateAdded": { "type": "string" },
+        "viewsCount": { "type": "number" },
+        "completionsCount": { "type": "number" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "isImportant": { "type": "boolean" }
+      },
+      "required": ["id", "title", "subject", "gradeLevel", "contentType"]
+    },
+    "comments": {
+      "title": "Post Comment",
+      "description": "Public questions, feedback and remarks on educational posts",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "materialId": { "type": "string" },
+        "authorName": { "type": "string" },
+        "content": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "materialId", "authorName", "content", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/materials/{materialId}": {
+      "schema": "materials",
+      "description": "Collection of learning posts and activities"
+    },
+    "/comments/{commentId}": {
+      "schema": "comments",
+      "description": "Collection of post comments"
+    }
+  }
+}

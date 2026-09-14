@@ -1,0 +1,15 @@
+// Firebase configuration for IRS Nexus Cloud
+export const firebaseConfig = {
+  projectId: "gen-lang-client-0193491997",
+  appId: "1:588025286599:web:bb25bf7634d5dc7bbb13e2",
+  apiKey: "AIzaSyBF1-4EEvUlHCja4FVDo0cUoWLcHe5X_6w",
+  authDomain: "gen-lang-client-0193491997.firebaseapp.com",
+  firestoreDatabaseId: "ai-studio-irsnexuscloud-10b55845-28e7-46a3-8d34-912902f01037",
+  storageBucket: "gen-lang-client-0193491997.firebasestorage.app",
+  messagingSenderId: "588025286599",
+  measurementId: "",
+  oAuthClientId: "588025286599-33re4hvc1ktqmqi62vcbo70v2s8ji7dk.apps.googleusercontent.com",
+  recaptchaSiteKey: ""
+};
+
+export default firebaseConfig;
